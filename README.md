@@ -2,30 +2,32 @@
 
 ## Overview
 
-Welcome to the **Rock, Paper, Scissors Simulation** project! This project is designed to help you practice solving a relatively simple problem while focusing on building core features in JavaScript. It's an excellent opportunity to hone your coding skills by implementing game logic and testing it directly through the browser console.
+Welcome to the **Rock, Paper, Scissors Simulation** project! This project combines **HTML**, **CSS**, and **JavaScript** to create an interactive game. It’s designed to help you practice building a simple, fun project while focusing on fundamental coding skills across multiple layers of development.
 
 ## Key Features
 
-- **No UI Required**: This project intentionally skips HTML and CSS to focus solely on JavaScript functionality. The goal is to master logic-building and interactive gameplay without distractions.
-- **Console-Based Gameplay**: Play and test the game using the browser console, making it a quick and easy way to validate your code.
-- **Competitive Gameplay**: The game consists of multiple rounds, and the first player to reach **5 wins** will be declared the victor.
+- **Interactive UI**: The project includes **HTML** and **CSS** to provide a polished user interface for gameplay.
+- **JavaScript Game Logic**: Build the core mechanics of the game, including input handling and result calculation, using JavaScript.
+- **Browser-Based Gameplay**: Play the game directly in your browser with a visually appealing interface.
+- **Competitive Gameplay**: The game consists of multiple rounds, and the first player to reach **5 wins** is crowned the champion.
 
 ## Gameplay Rules
 
 - The game is played in **rounds**.
-- Each round, the player and the computer choose one of three options: **Rock**, **Paper**, or **Scissors**.
+- Each round, the player clicks a button to choose one of three options: **Rock**, **Paper**, or **Scissors**.
 - The outcomes are based on classic rules:
   - **Rock beats Scissors** 🪨✂️
   - **Scissors beats Paper** ✂️📄
   - **Paper beats Rock** 📄🪨
-- The player or computer who wins **5 rounds first** is crowned the champion. 🏆
+- The first player (either you or the computer) to win **5 rounds** claims victory! 🏆
 
 ## Objective
 
 This project is all about:
 
-- Practicing JavaScript fundamentals
-- Building logical game mechanics
-- Testing and debugging directly in the browser console
+- **HTML**: Structuring your webpage with semantic and accessible elements.
+- **CSS**: Styling your game with responsive design principles and eye-catching visuals.
+- **JavaScript**: Implementing logical game mechanics and interactive features.
+- **Browser Testing**: Debugging and refining the project directly in your browser.
 
-So, roll up your sleeves, fire up your favorite browser, and get ready to code, play, and improve your skills! 💻✨
+Get ready to bring your coding ideas to life with this fun and engaging project. Let’s start building a dynamic, interactive **Rock, Paper, Scissors** game! 💻✨

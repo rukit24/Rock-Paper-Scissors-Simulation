@@ -9,12 +9,11 @@ const chooseRock = document.getElementById("rock");
 const choosePaper = document.getElementById("paper");
 const chooseScissors = document.getElementById("scissors");
 const gameChoice = ["Rock", "Paper", "Scissors"];
-const maxRound = 15;
 
-const handleChoice = (playerChoice) => {
-    if (playerScore >= 5 || computerScore >= 5) {
-        return; // Stop further game logic
-      }
+function handleChoice(playerChoice) {
+  if (playerScore >= 5 || computerScore >= 5) {
+    return; // Stop further game logic
+  }
   const computerChoice = gameChoice[Math.floor(Math.random() * 3)];
   gameMessage.textContent = `You choose ${playerChoice} and the Computer choose ${computerChoice}.`;
 
@@ -40,36 +39,36 @@ const handleChoice = (playerChoice) => {
   if (playerScore === 5) {
     gameMessage.innerHTML =
       "<br><strong>You have won the game! Congratulations!!!</strong>";
-      resetGame();
+    resetGame();
   } else if (computerScore === 5) {
     gameMessage.innerHTML =
       "<br><strong>You have lost the game! Try next time!!!</strong>";
-      resetGame()
+    resetGame();
   }
-};
+}
 
-function resetGame(){
-        // Ensure the reset button exists only once
-        if (!document.getElementById("reset")) {
-            const resetBtn = document.createElement("div");
-            resetBtn.classList.add("reset");
-            resetBtn.id = "reset";
-            resetBtn.innerHTML = `<h1>Reset The Game !!!</h1>`;
-            document.body.appendChild(resetBtn);
-      
-            // Add event listener to reset the game
-            resetBtn.addEventListener("click", () => {
-              playerScore = 0;
-              computerScore = 0;
-              playerScoreDom.textContent = 0;
-              computerScoreDom.textContent = 0;
-              gameMessage.textContent = `The game is Start`;
-              roundCount.textContent = `Round 1`;
-      
-              // Remove the reset button
-              resetBtn.remove();
-            });
-          }    
+function resetGame() {
+  // Ensure the reset button exists only once
+  if (!document.getElementById("reset")) {
+    const resetBtn = document.createElement("div");
+    resetBtn.classList.add("reset");
+    resetBtn.id = "reset";
+    resetBtn.innerHTML = `<h1>Reset The Game !!!</h1>`;
+    document.body.appendChild(resetBtn);
+
+    // Add event listener to reset the game
+    resetBtn.addEventListener("click", () => {
+      playerScore = 0;
+      computerScore = 0;
+      playerScoreDom.textContent = 0;
+      computerScoreDom.textContent = 0;
+      gameMessage.textContent = `The game is Start`;
+      roundCount.textContent = `Round 1`;
+
+      // Remove the reset button
+      resetBtn.remove();
+    });
+  }
 }
 
 chooseRock.addEventListener("click", () => handleChoice("Rock"));
